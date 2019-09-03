@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/afidalgo0811/note-app/issues"
   },
-  "homepage": "https://github.com/afidalgo0811/note-app#readme"
+  "homepage": "https://github.com/afidalgo0811/note-app#readme",
+  "dependencies": {
+    "validator": "^11.1.0"
+  }
 }
