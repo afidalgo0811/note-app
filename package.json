@@ -1,0 +1,19 @@
+{
+  "name": "note-app",
+  "version": "1.0.0",
+  "description": "repo for note app on udemy class\r new branch",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afidalgo0811/note-app.git"
+  },
+  "author": "alberto fidalgo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afidalgo0811/note-app/issues"
+  },
+  "homepage": "https://github.com/afidalgo0811/note-app#readme"
+}
