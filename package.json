@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/afidalgo0811/note-app#readme",
   "dependencies": {
-    "validator": "^11.1.0"
+    "chalk": "^2.4.2",
+    "validator": "^11.1.0",
+    "yargs": "^14.0.0"
   }
 }
