@@ -1,7 +1,5 @@
-console.log("app.js");
-
 const validator = require("validator");
-const getNotes = require("./note.js");
+const notes = require("./note.js");
 const chalk = require("chalk");
 const yargs = require("yargs");
 
@@ -11,17 +9,23 @@ const yargs = require("yargs");
 yargs
     .command(
         "add",
-        "adding a note",
-        function (argv) {
-            return argv.option("title", {
+        "adding a note", {
+            title: {
                 alias: "title",
                 describe: "Note Title",
                 demandOption: true,
                 type: 'string'
-            });
+            },
+            body: {
+                alias: "body",
+                describe: "Note body",
+                demandOption: true,
+                type: 'string'
+            }
         },
         function (argv) {
-            console.log("adding a new note", argv.title);
+
+            notes.addNote(argv.title, argv.body)
         }
     )
     .options("add", {
@@ -30,4 +34,4 @@ yargs
     .help().argv;
 
 
-console.log(yargs.argv);
+yargs.parse();
