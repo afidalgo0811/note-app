@@ -50,4 +50,18 @@ yargs
         describe: "remove a note"
     })
     .help().argv;
+
+//list notes cmd
+yargs
+    .command(
+        "list",
+        "list notes",
+        (argv) => {
+            notes.listNotes();
+        }
+    )
+    .options("list", {
+        describe: "list notes"
+    })
+    .help().argv;
 yargs.parse();
