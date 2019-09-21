@@ -21,7 +21,7 @@ yargs
                 type: "string"
             }
         },
-        function (argv) {
+        (argv) => {
             notes.addNote(argv.title, argv.body);
         }
     )
@@ -42,7 +42,7 @@ yargs
                 type: "string"
             }
         },
-        function (argv) {
+        (argv) => {
             notes.removeNote(argv.title);
         }
     )
