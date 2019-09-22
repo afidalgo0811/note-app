@@ -1,10 +1,6 @@
 const fs = require("fs");
 const chalk = require("chalk");
 
-const getNotes = () => {
-  return "my notes";
-};
-
 const loadNotes = () => {
   try {
     const dataBuffer = fs.readFileSync("notes.json");
@@ -59,11 +55,11 @@ const readNote = title => {
     console.log(chalk.bgMagenta(note.title));
     console.log(chalk.yellow(note.body));
   } else {
-    console.log(chalk.red(note.title + " not found!"));
+    console.log(chalk.red(title + " not found!"));
   }
 };
 module.exports = {
-  getNotes: getNotes,
+ 
   addNote: addNote,
   removeNote: removeNote,
   listNotes: listNotes,
